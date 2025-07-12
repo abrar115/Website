@@ -5,7 +5,6 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
     links.classList.toggle('active');
 })
-
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {

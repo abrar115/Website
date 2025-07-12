@@ -1,5 +1,6 @@
-const menu = document.querySelector('#mobile-menu-projects');
-const links = document.querySelector('.navbar__menu__projects');
+
+const menu = document.querySelector('#mobile-menu__js');
+const links = document.querySelector('.navbar__menu__js');
 
 menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
@@ -11,5 +12,3 @@ document.addEventListener('mousemove', e => {
   cursor.style.top = `${e.clientY}px`;
   cursor.style.left = `${e.clientX}px`;
   })
-
-
