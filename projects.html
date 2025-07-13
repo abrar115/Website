@@ -9,12 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="fontawesome/css/all.css">
 <link rel = "icon" href="images/handshake-solid.svg" type="image/x-icon">
+
     <title>Projects</title>
 </head>
 <body class = "projects__body" id = "top">
  <nav class="navbar navbar__projects">
         <div class="navbar__container navbar__container__projects">
-            <a href="/" id="navbar__logo" class="navbar__logo__projects"><i class="fa-solid fa-handshake" id="handshake"></i> SlayerUtils</a>
+            <a href="" id="navbar__logo" class="navbar__logo__projects"><i class="fa-solid fa-handshake" id="handshake"></i> SlayerUtils</a>
             <div class="navbar__toggle navbar__toggle__projects mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -58,7 +59,7 @@
        <section id="Features">
   <h2>Features</h2>
   
-  <div class="features-text">
+  <div class="features-text hidden">
     <p><i class="fa-regular fa-circle-right"></i> Slayers </p>
     <ul>
         <li>&nbsp;</li>
@@ -67,7 +68,7 @@
     </ul>
   </div>
 
-  <div class="features-text">
+  <div class="features-text hidden">
     <p><i class="fa-regular fa-circle-right"></i> Combat Overlays </p>
     <ul>
         <li>&nbsp;</li>
@@ -76,7 +77,7 @@
           <li><i class="fa-regular fa-circle-right"></i> Reset Combat Overlays.</li>
 </ul>
   </div>
-  <div class="features-text">
+  <div class="features-text hidden">
 <p><i class="fa-regular fa-circle-right"></i> RNG Meter </p>
 <ul>
     <li>&nbsp;</li>
@@ -84,7 +85,7 @@
     <li><i class="fa-regular fa-circle-right"></i> RNG Meter Drop Notifier.</li>
 </ul>
 </div>
-  <div class="features-text">
+  <div class="features-text hidden">
 <p><i class="fa-regular fa-circle-right"></i> Customizations </p>
 <ul>
     <li>&nbsp;</li>
@@ -98,14 +99,14 @@
 
  <section id="changelog">
     <h2>Changelog</h2>
-    <div class="log-entry">
+    <div class="log-entry hidden">
         <p class="changelog-p"> [v0.0] <p class="changelog-date">[1-1-1999]</p></p> 
         <ul>
             <li>&nbsp;</li>
             <li><i class="fa-solid fa-plus"></i> Added Nothing.</li>
     </ul> 
     </div>
-    <div class="log-entry">
+    <div class="log-entry hidden">
         <p class="changelog-p"> [v0.1] <p class="changelog-date">[11-7-2025]</p></p> 
         <ul>
             <li>&nbsp;</li>
@@ -115,7 +116,7 @@
 
  </section>
 </div>
-<section id="faq">
+<section id="faq hidden">
     <h2 class = "faq-title"><span>FAQ</span></h2>
     <div class="question">
         <p class = "question_text">Q. How do you download it? </p>
@@ -131,14 +132,13 @@
     </div>
 </section>
      </div>
-    <script src="jsfiles/projects.js" class="img__projects"></script>
-
+ <script differ src="jsfiles/index.js"></script>
 </body>
 <footer>
     <section class="footerlinks">
     <div class="quickLinks">
         <p>Quick Links</p>
-        <ul class = footerlist>
+        <ul class = "footerlist">
             <li><a href="#top"><i class="fa-solid fa-minus"></i> To the top</a></li>
             <li><a href="#Features"><i class="fa-solid fa-minus"></i> Features</a></li>
             <li><a href="#changelog"><i class="fa-solid fa-minus"></i> Changelog</a></li>

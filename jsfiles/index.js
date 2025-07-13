@@ -2,36 +2,71 @@
 const menu = document.querySelector('.mobile-menu');
 const links = document.querySelector('.navbar__menu');
 
-menu.addEventListener('click', function(){
-    console.log("HELLO")
-    menu.classList.toggle('is-active');
-    links.classList.toggle('active');
-})
-document.querySelectorAll('.navbar__links').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('is-active');
-    links.classList.remove('active');
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
 });
 
-document.querySelectorAll('.navbar__links').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault(); // stop default navigation for a moment
-    const href = link.getAttribute('href');
+ menu.addEventListener('click', function(){
+     console.log("HELLO")
+     menu.classList.toggle('is-active');
+     links.classList.toggle('active');
+ })
+ document.querySelectorAll('.navbar__links').forEach(link => {
+   link.addEventListener('click', () => {
+     menu.classList.remove('is-active');
+     links.classList.remove('active');
+   });
+ });
 
-    menu.classList.remove('is-active');
-    links.classList.remove('active');
 
-    // Wait for animation to finish, then navigate
-    setTimeout(() => {
-      window.location.href = href;
-    }, 300); // match your CSS transition time
-  });
-});
+ document.querySelectorAll('.navbar__links').forEach(link => {
+   link.addEventListener('click', e => {
+     e.preventDefault();
+     const href = link.getAttribute('href');
 
-const cursor = document.querySelector('.cursor');
+     menu.classList.remove('is-active');
+     links.classList.remove('active');
 
-document.addEventListener('mousemove', e => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
+     setTimeout(() => {
+       window.location.href = href;
+     }, 300); 
+   });
+ });
+
+ const cursor = document.querySelector('.cursor');
+
+ document.addEventListener('mousemove', e => {
+   cursor.style.top = `${e.clientY}px`;
+   cursor.style.left = `${e.clientX}px`;  
+   })
+
+
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry)
+    if (entry.isIntersecting){
+      entry.target.classList.add('show')
+    }
+     else{
+       entry.target.classList.remove('show')
+     }
   })
+})
+
+const hidden = document.querySelectorAll('.hidden')
+const hiddenY = document.querySelectorAll('.hiddenY')
+hidden.forEach((el)=>{observer.observe(el)})
+
+const observerY = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry)
+    if (entry.isIntersecting){
+      entry.target.classList.add('showY')
+    }
+     else{
+       entry.target.classList.remove('showY')
+     }
+  })
+})
+hiddenY.forEach((ey)=>observerY.observe(ey))

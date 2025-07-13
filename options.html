@@ -11,7 +11,7 @@
 <body class="body__options">
         <nav class="navbar navbar__options">
         <div class="navbar__container navbar__container__options">
-            <a href="/" id="navbar__logo" class="navbar__logo__options"><i class="fa-solid fa-book"></i>&nbsp;   Website</a>
+            <a href="" id="navbar__logo" class="navbar__logo__options"><i class="fa-solid fa-book"></i>Website</a>
             <div class="navbar__toggle navbar__toggle__options mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -36,7 +36,7 @@
     <div class="flexbox__options">
     <div class="project-grid">
         <div class="cursor"></div>
-  <div class="project-card project-card--wide">
+  <div class="project-card project-card--wide hiddenY">
     <a href="projects.html">
       <video autoplay loop muted playsinline>
 
@@ -46,26 +46,34 @@
       <p>A Hypixel Skyblock mod aimed at assisting the player with various tasks. Click to learn more!</p>
     </a>
   </div>
-
-  <div class="project-row">
-    <div class="project-card">
-      <a href="js.html">
-        <img src="images/js.png" alt="">
+   <div class="card">
+  <div class="project-card hidden">
+  <a href="js.html" class="card-link">
+    <div class="card-media">
+      <img src="images/js.png" alt="">
+    </div>
+    <div class="card-content">
       <h3>JavaScript Projects</h3>
-      <p>JavaScript projects.  Click to learn more!</p>
-      </a>
+      <p>Click to learn more.</p>
     </div>
-    <div class="project-card">
-      <a href="py.html">
-         <img src="images/python.jpeg" alt="">
+  </a>
+</div>
+    <div class="project-card hidden">
+  <a href="py.html" class="card-link">
+    <div class="card-media">
+      <img src="images/python.jpeg" alt="">
+    </div>
+    <div class="card-content">
       <h3>Python Projects</h3>
-      <p>Python projects. Click to learn more!</p>
-      </a>
+      <p>Click to learn more.</p>
     </div>
+  </a>
+</div>
+</div>
   </div>
 </div>
 </div>
-    <script src="jsfiles/options.js"></script>
+      <script src="jsfiles/index.js"></script>
 </body>
 </html>
 
