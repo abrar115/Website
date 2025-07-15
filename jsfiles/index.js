@@ -2,12 +2,8 @@
 const menu = document.querySelector('.mobile-menu');
 const links = document.querySelector('.navbar__menu');
 
-document.addEventListener("DOMContentLoaded", () => {
-  AOS.init();
-});
 
  menu.addEventListener('click', function(){
-     console.log("HELLO")
      menu.classList.toggle('is-active');
      links.classList.toggle('active');
  })
@@ -54,8 +50,11 @@ const observer = new IntersectionObserver((entries)=>{
   })
 })
 
+
 const hidden = document.querySelectorAll('.hidden')
 const hiddenY = document.querySelectorAll('.hiddenY')
+const hiddenX = document.querySelectorAll('.hiddenX')
+
 hidden.forEach((el)=>{observer.observe(el)})
 
 const observerY = new IntersectionObserver((entries)=>{
@@ -69,4 +68,18 @@ const observerY = new IntersectionObserver((entries)=>{
      }
   })
 })
+
 hiddenY.forEach((ey)=>observerY.observe(ey))
+
+const observerX = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry)
+    if (entry.isIntersecting){
+      entry.target.classList.add('showX')
+    }
+     else{
+       entry.target.classList.remove('showX')
+     }
+  })
+})
+hiddenX.forEach((ex)=>observerX.observe(ex))
