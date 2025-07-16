@@ -222,6 +222,10 @@
     border-radius: 15px;
     
 }
+.ch{
+    transform: none;
+     transition: none;
+}
   }
       
 
@@ -1352,7 +1356,7 @@
 }
 
 .ch{
-    box-shadow:1px 1px 10px 10px chocolate
+    box-shadow:1px 1px 10px 10px chocolate;
 }
 
 /* .card-horizontal:hover {
