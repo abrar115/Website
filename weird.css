@@ -103,3 +103,8 @@ body{
 .wrapper .main_content .info div{
   margin-bottom: 20px;
 }
+ @media screen and (max-width: 768px){
+  .wrapper .sidebar{
+    display:none
+  }
+ }

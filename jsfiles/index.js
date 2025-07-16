@@ -89,6 +89,7 @@ const observerX = new IntersectionObserver((entries)=>{
   })
 })
 hiddenX.forEach((ex)=>observerX.observe(ex))
+if (document.URL.includes("options.html")){
 
 ct.addEventListener('mouseenter', ()=>{
   ct1.style.display="block"
@@ -117,3 +118,4 @@ py.addEventListener('mouseleave', ()=>{
 // html.addEventListener('mouseOut', ()=>{
 //   html.classList.remove('visible')
 // })
+}
