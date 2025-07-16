@@ -8,6 +8,8 @@ const ct1 = document.querySelector('.ct1')
 const js1 = document.querySelector('.js1')
 const py1 = document.querySelector('.py1')
 const html = document.querySelector('.html')
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 
  menu.addEventListener('click', function(){
      menu.classList.toggle('is-active');
@@ -89,7 +91,7 @@ const observerX = new IntersectionObserver((entries)=>{
   })
 })
 hiddenX.forEach((ex)=>observerX.observe(ex))
-if (document.URL.includes("options.html")){
+if (document.URL.includes("options.html" && width > 769)){
 
 ct.addEventListener('mouseenter', ()=>{
   ct1.style.display="block"
