@@ -1,7 +1,13 @@
 
 const menu = document.querySelector('.mobile-menu');
 const links = document.querySelector('.navbar__menu');
-
+const ct = document.querySelector('.ct2')
+const js = document.querySelector('.js')
+const py = document.querySelector('.py')
+const ct1 = document.querySelector('.ct1')
+const js1 = document.querySelector('.js1')
+const py1 = document.querySelector('.py1')
+const html = document.querySelector('.html')
 
  menu.addEventListener('click', function(){
      menu.classList.toggle('is-active');
@@ -83,3 +89,31 @@ const observerX = new IntersectionObserver((entries)=>{
   })
 })
 hiddenX.forEach((ex)=>observerX.observe(ex))
+
+ct.addEventListener('mouseenter', ()=>{
+  ct1.style.display="block"
+})
+ct.addEventListener('mouseleave', ()=>{
+  ct1.style.display="none"
+})
+
+js.addEventListener('mouseenter', ()=>{
+  js1.style.display="block"
+})
+js.addEventListener('mouseleave', ()=>{
+  js1.style.display="none"
+})
+
+py.addEventListener('mouseenter', ()=>{
+ py1.style.display="block"
+})
+py.addEventListener('mouseleave', ()=>{
+  py1.style.display="none"
+})
+
+// html.addEventListener('mouseOver', ()=>{
+//   html.classList.add('visible')
+// })
+// html.addEventListener('mouseOut', ()=>{
+//   html.classList.remove('visible')
+// })

@@ -205,7 +205,31 @@
   .mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+.index__navbar__logo,
+    #navbar__logo {
+        font-size: 24px;
+        text-align: center;
+    }
 
+    .index__logo__details span {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navbar__links {
+        font-size: 24px;
+    }
+
+    .card-horizontal {
+        flex: 1 1 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .index__main {
+        font-size: 14px;
+    }
   }
       
 
@@ -1317,6 +1341,31 @@
   padding: 2rem 5%;
   margin: 0 20%;
 }
+
+.horizontal-container, .vertical-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-horizontal {
+    flex: 1 1 300px;
+    max-width: 600px;
+    min-width: 280px;
+    
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+.index__main {
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 .card-horizontal {
   border-radius: 10px;
