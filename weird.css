@@ -107,3 +107,15 @@ background: #184e77;
 .sidenav__details li a{
   color:#52b69a
 }
+
+/* Options - sidebar details */
+
+.sidenav__details__options{
+  background: #fcabfc;
+  border-right:2px solid black
+}
+
+.sidenav__details__options li a:hover{
+  color: #dd0a0a;
+
+}
