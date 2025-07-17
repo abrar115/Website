@@ -8,9 +8,10 @@ const ct1 = document.querySelector('.ct1')
 const js1 = document.querySelector('.js1')
 const py1 = document.querySelector('.py1')
 const html = document.querySelector('.html')
+const sound = document.querySelector('#cyber__voice')
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-
+if (!document.URL.includes("study.html")){
  menu.addEventListener('click', function(){
      menu.classList.toggle('is-active');
      links.classList.toggle('active');
@@ -22,7 +23,7 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
    });
  });
 
-
+}
  document.querySelectorAll('.navbar__links').forEach(link => {
    link.addEventListener('click', e => {
      e.preventDefault();
@@ -91,6 +92,9 @@ const observerX = new IntersectionObserver((entries)=>{
   })
 })
 hiddenX.forEach((ex)=>observerX.observe(ex))
+
+
+
 if (document.URL.includes("options.html" && width > 769)){
 
 ct.addEventListener('mouseenter', ()=>{
@@ -121,3 +125,7 @@ py.addEventListener('mouseleave', ()=>{
 //   html.classList.remove('visible')
 // })
 }
+
+window.playAudio = function () {
+  sound.play();
+};

@@ -23,7 +23,7 @@
 }
   .index__navbar{
   background: #a2a6af;
-  border-bottom: 3px solid black;
+  border: 3px solid black;
 }
 
   .navbar__container{
@@ -1559,4 +1559,113 @@ color:#219ebc
     margin-right: 25%;
     margin-top:5%
 
+}
+
+/* Study CSS */
+
+
+
+@keyframes study{
+  0%{
+    color:#184e77
+  }
+  10%{
+    color: #1e6091
+  }
+  20%{
+    color:#1a759f
+  }
+  30%{
+    color: #168aad
+  }
+  40%{
+    color:#34a0a4
+  }
+  50%{
+    color:#52b69a
+  }
+  60%{
+    color:#76c893
+  }
+  70%{
+    color:#99d98c
+  }
+  80%{
+    color:#b5e48c
+  }
+  90%{
+    color: #d9ed92
+  }
+  100%{
+    color:#d9ed92
+  }
+}
+
+
+
+@keyframes study-shadow{
+  0%{
+    box-shadow:1px 1px 10px 10px #184e77
+  }
+  10%{
+    box-shadow:1px 1px 10px 10px #1e6091
+  }
+  20%{
+    box-shadow:1px 1px 10px 10px #1a759f
+  }
+  30%{
+    box-shadow:1px 1px 10px 10px #168aad
+  }
+  40%{
+    box-shadow:1px 1px 10px 10px #34a0a4
+  }
+  50%{
+   box-shadow:1px 1px 10px 10px #52b69a
+  }
+  60%{
+   box-shadow:1px 1px 10px 10px#76c893
+  }
+  70%{
+    box-shadow:1px 1px 10px 10px#99d98c
+  }
+  80%{
+    box-shadow:1px 1px 10px 10px#b5e48c
+  }
+  90%{
+    box-shadow: 1px 1px 10px 10px #d9ed92
+  }
+  100%{
+    box-shadow:1px 1px 10px 10px#d9ed92
+  }
+}
+
+
+.features__study h1{
+  color: white;
+  animation-name: study;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.features__study{
+   animation-name: study-shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ max-width: 50%;
+ width:50%
+}
+.features__study p{
+  color: white;
+  animation-name: study;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
