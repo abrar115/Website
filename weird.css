@@ -99,6 +99,7 @@ background: #184e77;
 
 .sidenav__details{
   color:#52b69a;
+  background: black;
 }
 .sidenav__details li a:hover {
   color:#99d98c;
