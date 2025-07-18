@@ -130,7 +130,7 @@
           z-index: -1;
       }
       .index__menu__details{
-          background: rgb(82, 81, 81);
+          background: #a2a6af;
           transition: all 0.5s ease;
       }
       .navbar__menu.active {
@@ -141,6 +141,7 @@
           font-size: 1.6rem;
       }
       .index__menu__details.active{
+        border-top: 5px solid black;
         border-bottom: 5px black solid
       }
       #navbar__logo {
@@ -216,7 +217,12 @@
     
 }
   }
-      
+    .index__footer *{
+      text-align: right;
+      margin-right:5%;
+      margin-top:8%;
+      color:rgb(56, 55, 55)
+    }  
 
 
   /* PROJECTS FILE */
@@ -625,63 +631,6 @@
   }
 
 
-  /* Options CSS */
-
-  .navbar__options {
-      background: #620488;
-      border-bottom: 5px solid rgb(5, 5, 5)
-  }
-
-  .navbar__logo__options {
-  background-color:lavender;
-  gap: 10px
-  }
-
-
-
-
-  .navbar__links__options{
-      color:white;
-      font-size: 35px;
-  }
-
-
-
-  .navbar__links__options:hover {
-      color: gold;
-      transition: all 0.3s ease;
-      transform: scale(1.1)
-  }
-
-
-  
-
-  @media screen  and (max-width: 960px) {
-
-      .navbar__menu__options{
-          transition: all 0.5s ease;
-          background: #620488;
-      }
-      .navbar__menu__options.active {
-          background: #620488;
-          transition: all 0.5s ease;
-          border-top: 5px white solid;
-          border-bottom: 5px white solid
-      }
-
-      .navbar__toggle__options .bar {
-          transition: all 0.3s ease-in-out;
-          background: white;
-      }
-  }
-
-
-  .body__options{
-      background-color: rgb(228, 189, 240);
-      font-family: Arial, Helvetica, sans-serif;
-      
-  }
-
 
   .project-grid {
     display: flex;
@@ -814,21 +763,12 @@
   /* Mobile responsiveness */
    
   @media (max-width: 768px) {
-  .navbar__container__options,
-    .navbar__menu__options {
-      flex-direction: flex;
-      align-items: center;
-      text-align: center;
-    }
   .changelog-date{
       
       margin-left: 0
   }
 
-    .navbar__menu__options {
-      width: 100%;
-    }
-
+    
     .footerlinks {
       flex-direction: column;
       align-items: center;
@@ -1337,7 +1277,6 @@
 
 .card-horizontal {
   border-radius: 10px;
-  
   width: 100%;
   padding-bottom: 50px;
   margin-bottom: 25px;
@@ -1484,6 +1423,7 @@
     
 .ch{
     box-shadow:1px 1px 10px 10px chocolate;
+      margin-top: 50px;
 }
 
 /* .card-horizontal:hover {
@@ -1635,6 +1575,43 @@ color:#219ebc
   }
 }
 
+@keyframes options-border{
+  0%{
+    border: 5px solid #f72585
+  }
+    10%{
+    border: 5px solid #b5179e
+  }
+    20%{
+    border: 5px solid #7209b7
+  }
+    30%{
+    border: 5px solid #560bad
+  }
+    40%{
+    border: 5px solid #480ca8
+  }
+    50%{
+    border: 5px solid #3a0ca3
+  }
+
+    60%{
+    border: 5px solid #3f37c9
+  }
+    70%{
+    border: 5px solid #4361ee
+  }
+   80%{
+    border: 5px solid #4895ef
+  }
+    90%{
+    border: 5px solid #4cc9f0
+  }
+    100%{
+    border: 5px solid #4cc9f0
+  }
+}
+
 
 .features__study h1{
   color: white;
@@ -1665,3 +1642,52 @@ color:#219ebc
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+/* options CSS */
+
+  .body__options{
+      background-color: rgb(228, 189, 240);
+      font-family: Arial, Helvetica, sans-serif;
+      
+  }
+
+  .main__options{
+    width:70%;
+    margin: 0 auto
+  }
+
+  .ct__details{
+    width:95%;
+    margin-left:25%;
+    margin-top:10%;
+    border:5px solid black;
+    animation-name:options-border;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border-radius: 20px;
+    padding:5%;
+     text-align: center;
+     text-wrap: always;
+  }
+
+  .ct__details:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease
+  }
+  .ct__details h1{
+    color:#3a0ca3;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3f37c9
+    
+  }
+  .ct__details p{
+    color: #f72585;
+    margin-top: 5px
+  }
+.ct__options{
+  grid-template-columns: repeat(2, 2fr);
+  display:grid;
+  text-wrap: always;
+}
+

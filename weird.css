@@ -52,7 +52,6 @@ main {
   right: 0;
   z-index: 100;
   margin: 20px;
-  background: yellowgreen;
   display: none;
   align-items: center;
   padding: 8px;
@@ -118,4 +117,7 @@ background: #184e77;
 .sidenav__details__options li a:hover{
   color: #dd0a0a;
 
+}
+.sidenav__details__options h2{
+  color:rgb(255, 0, 221)
 }
