@@ -1690,4 +1690,77 @@ color:#219ebc
   display:grid;
   text-wrap: always;
 }
+/* TIME SHEET CSS */
 
+@keyframes timesheet{
+  0%{
+    border-color:#dbead7
+  }
+  10%{
+    border-color:#c3dcbc
+  }
+  20%{
+    border-color:#abcea1
+  }
+  30%{
+    border-color:#94c186
+  }
+  40%{
+    border-color:#7cb36b
+  }
+  50%{
+    border-color:#66a253
+  }
+  60%{
+    border-color:#558745
+  }
+  70%{
+    border-color:#446c37
+  }
+  80%{
+    border-color:#33512a
+  }
+  90%{
+    border-color:#20331a
+  }
+  100%{
+    border-color:#20331a
+  }
+}
+
+.timesheet__main{
+  text-align: center;
+}
+.timesheet__main img{
+  display: block;
+  margin: 3% auto;
+  width: 70%;
+  border-radius: 5px;
+  /* animation-name: timesheet;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+  animation-timing-function: linear; */
+
+}
+.timesheet__containers{
+  border: 4px solid white;
+  border-radius:20px;
+  animation-name: timesheet;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+  animation-timing-function: linear; 
+  margin: 2%
+}
+.timesheet__desc{
+  margin-bottom: 2%;
+ color:#582f0e
+}
+
+.timesheet__body{
+  background: #52b69a;
+}
+.timesheet__main{
+  background: #52b69a;
+}
