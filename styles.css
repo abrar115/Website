@@ -1073,12 +1073,47 @@
 
 
   .about__btn:hover {
-    background-color: #555;
+    background-color: #555555;
   }
+
+.about__row h1{
+  text-align: center;
+  color:white;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-bottom: 20px;
+  border-bottom: 4px solid white
+}
+
+.about__row li{
+  display:inline;
+  margin-left: 15%;
+  text-align: left;
+}
+.about__row a{
+  text-decoration: none;
+  color:white
+}
+.about__row{
+      
+      margin-top:15%;
+      margin-bottom: 5%;
+      justify-content: space-between;
+      }  
+
+.about__row i{
+  color:white
+}
+
+.about__row i:hover{
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+  
+}
 
   /* Rounded image styling */
   
-  .about__image__wrapper {
+  .about__image__wrapper {  
     flex: 1;
     display: flex;
     justify-content: center;
@@ -1435,7 +1470,6 @@
 
 
 .card-top-header {
-  color: #000;
   font-weight: bold;
   font-size: 1.3rem;
   padding: 1rem 1.5rem;
@@ -1464,10 +1498,24 @@ background: #d00000;
     color:white
 }
 .index__main__header{
-    color:beige;
+    color:transparent;
     border:none;
     box-shadow: none;
+    -webkit-text-stroke: 1px white; 
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px;
+    animation: move 5s linear infinite alternate;
+    
+    
 }
+@keyframes move {
+  100%{
+    background-position: 0 0;
+  }
+}
+
 
 
 /* .ci{
