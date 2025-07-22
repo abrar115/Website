@@ -1,0 +1,24 @@
+{
+  "python": {
+    "title": "Python Revision Tour",
+    "summary": "This chapter revisits fundamental Python concepts including data types, operators, control structures, functions, strings, lists, dictionaries, and file handling. It serves as a refresher for core Python syntax and programming constructs before advancing to higher-level topics.",
+    "formulas": [
+      "List slicing: list[start:stop:step]",
+      "String formatting: f'Text {variable}' or .format()",
+      "Dictionary operations: dict.keys(), dict.values(), dict.items()",
+      "File modes: 'r' (read), 'w' (write), 'a' (append)",
+      "Lambda function: lambda x: x * 2"
+    ],
+    "derivations": [
+      "Execution flow of loops (for/while) with break/continue",
+      "Scope resolution in nested functions (local vs. global)",
+      "Memory allocation for mutable (lists) vs. immutable (tuples) objects",
+      "File read/write operations (with open() as file)",
+      "Dynamic typing in Python",
+      "Mutable vs. Immutable objects",
+      "Iterables vs. Iterators",
+      "Exception handling (try-except-else-finally)"
+    ]
+    
+  }
+}

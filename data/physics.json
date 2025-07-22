@@ -1,0 +1,22 @@
+{
+  "Electric-Field": {
+    "title": "Electric Charges and Fields",
+    "summary": "This chapter introduces the fundamental concepts of electric charges, Coulomb's law, electric fields, and Gauss's law. It explains how charges interact, the nature of electric fields, and how to calculate them for different charge distributions. Key topics include conservation and quantization of charge, superposition principle, electric dipoles, and electric field lines.",
+    "formulas": [
+      "Coulomb's Law: F = (1 / 4πε₀) × (q₁q₂ / r²)",
+      "Electric Field (E) due to a point charge: E = (1 / 4πε₀) × (q / r²)",
+      "Force on a charge in an electric field: F = qE",
+      "Electric Dipole Moment: p = q × 2a",
+      "Torque on a dipole in an electric field: τ = p × E",
+      "Electric Field due to an infinite plane sheet: E = σ / (2ε₀)",
+      "Gauss's Law: ∮E · dA = Qₑₙₛ / ε₀"
+    ],
+    "derivations": [
+      "Electric field due to a point charge (from Coulomb's Law)",
+      "Electric field due to an electric dipole (axial and equatorial positions)",
+      "Torque on an electric dipole in a uniform electric field",
+      "Electric field due to an infinite line of charge (using Gauss's Law)",
+      "Electric field due to a uniformly charged spherical shell (inside and outside)"
+    ]
+  }
+}

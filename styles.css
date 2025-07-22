@@ -426,7 +426,7 @@
 
 
   @media screen and (max-width: 960px) {
-    .features-section {
+    .Features {
       flex-direction: column;
       align-items: center;
     }
@@ -1811,4 +1811,28 @@ color:#219ebc
 }
 .timesheet__main{
   background: #52b69a;
+}
+
+/* Content page CSS */
+#chapter-title{
+  margin-bottom: 5%;
+}
+
+.chapter-formula,
+ .chapter-derivation,
+ .chapter-h3{
+  animation-name: study;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.chapter-h3{
+  margin-bottom:5%;
+  margin-top: 5%;
+}
+.chapter-formula, 
+.chapter-derivation{
+  margin-bottom: 10px
 }

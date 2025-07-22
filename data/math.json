@@ -1,0 +1,18 @@
+{
+  "Relations": {
+    "title": "Relations and Functions",
+    "summary": "This chapter introduces sets, Cartesian products, relations, types of functions (one-one, onto, bijective), composition of functions, invertible functions, and binary operations. It lays the foundation for algebraic structures.",
+    "formulas": [
+      "Cartesian product: A × B = {(a, b) | a ∈ A, b ∈ B}",
+      "Number of relations: 2^(n(A) × n(B))",
+      "Inverse function: f⁻¹(y) = x ⇔ f(x) = y",
+      "Composite function: (g ∘ f)(x) = g(f(x))",
+      "Binary operation: a * b ∈ S for all a, b ∈ S"
+    ],
+    "derivations": [
+      "Proof of equivalence relations (reflexive, symmetric, transitive)",
+      "Conditions for invertibility of a function",
+      "Proof of properties of composite functions"
+    ]
+  }
+}

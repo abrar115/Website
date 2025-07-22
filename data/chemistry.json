@@ -1,0 +1,25 @@
+{
+  "Solutions": {
+    "title": "Solutions",
+    "summary": "This chapter explores the types of solutions, concentration units, solubility, colligative properties, and abnormal molar masses. It covers liquid, solid, and gaseous solutions, along with Raoult's Law and ideal/non-ideal behavior.",
+    "formulas": [
+      "Mass percentage: (Mass of solute / Mass of solution) × 100",
+      "Mole fraction (x): x₁ = n₁ / (n₁ + n₂)",
+      "Molarity (M): Moles of solute / Volume of solution (in L)",
+      "Molality (m): Moles of solute / Mass of solvent (in kg)",
+      "Raoult's Law (for volatile solutes): p = x₁p₁° + x₂p₂°",
+      "Relative lowering of vapor pressure: (p° - p) / p° = x₂",
+      "Boiling point elevation: ΔT_b = K_b × m",
+      "Freezing point depression: ΔT_f = K_f × m",
+      "Osmotic pressure: π = nRT/V (or π = CRT)",
+      "Van't Hoff factor (i): i = (observed colligative property) / (normal colligative property)"
+    ],
+    "derivations": [
+      "Raoult's Law for volatile and non-volatile solutes",
+      "Relationship between molarity (M) and molality (m)",
+      "Derivation of boiling point elevation (ΔT_b = K_b × m)",
+      "Derivation of freezing point depression (ΔT_f = K_f × m)",
+      "Van't Hoff equation for osmotic pressure (π = CRT)"
+    ]
+  }
+}
