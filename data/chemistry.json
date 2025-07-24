@@ -8,7 +8,7 @@
       "Molarity (M): Moles of solute / Volume of solution (in L)",
       "Molality (m): Moles of solute / Mass of solvent (in kg)",
       "Raoult's Law (for volatile solutes): p = x₁p₁° + x₂p₂°",
-      "Relative lowering of vapor pressure: (p° - p) / p° = x₂",
+      "Relative lowering of vapor pressure: (p° - p) / p° = x₂ (for non-volatile solute)",
       "Boiling point elevation: ΔT_b = K_b × m",
       "Freezing point depression: ΔT_f = K_f × m",
       "Osmotic pressure: π = nRT/V (or π = CRT)",
@@ -20,6 +20,89 @@
       "Derivation of boiling point elevation (ΔT_b = K_b × m)",
       "Derivation of freezing point depression (ΔT_f = K_f × m)",
       "Van't Hoff equation for osmotic pressure (π = CRT)"
+    ]
+  },
+  "Electrochemistry": {
+    "title": "Electrochemistry",
+    "summary": "This chapter deals with the relationship between chemical energy and electrical energy, covering redox reactions, electrochemical cells (galvanic and electrolytic), electrode potentials, Nernst equation, conductance, Kohlrausch's Law, batteries, and corrosion.",
+    "formulas": [
+      "Cell Potential: E°_cell = E°_cathode - E°_anode",
+      "Gibbs Free Energy and Cell Potential: ΔG° = -nFE°_cell",
+      "Nernst Equation: E_cell = E°_cell - (0.0592/n) log Q (at 298 K)",
+      "Relationship between ΔG°, E°_cell, and K: ΔG° = -RT ln K = -nFE°_cell",
+      "Specific Conductivity (κ): κ = (1/R) × (l/A)",
+      "Molar Conductivity (Λ_m): Λ_m = (κ × 1000) / C (where C is molarity)",
+      "Kohlrausch's Law: Λ°_m = n₊λ°₊ + n_λ°_"
+    ],
+    "derivations": [
+      "Nernst Equation (from Gibbs Free Energy and reaction quotient)",
+      "Relationship between ΔG°, E°_cell, and K",
+      "Kohlrausch's Law (conceptual understanding)"
+    ]
+  },
+  "ck": {
+    "title": "Chemical Kinetics",
+    "summary": "This chapter explores the speed of chemical reactions and the factors influencing them, including reaction rates, rate laws, rate constants, reaction order, integrated rate equations, half-life, collision theory, activation energy, and the Arrhenius equation.",
+    "formulas": [
+      "Rate Law: Rate = k[A]ˣ[B]ʸ",
+      "Zero-order integrated rate law: [A]ₜ = -kt + [A]₀",
+      "First-order integrated rate law: ln[A]ₜ = -kt + ln[A]₀ or ln([A]₀/[A]ₜ) = kt",
+      "First-order half-life: t₁/₂ = 0.693 / k",
+      "Arrhenius Equation: k = Ae^(-Eₐ/RT) or ln k = (-Eₐ/R)(1/T) + ln A"
+    ],
+    "derivations": [
+      "Integrated rate laws for zero-order reactions",
+      "Integrated rate laws for first-order reactions",
+      "Half-life expression for first-order reactions",
+      "Arrhenius equation (conceptual understanding of linear form)"
+    ]
+  },
+  "df": {
+    "title": "d- and f-Block Elements",
+    "summary": "This chapter focuses on the characteristic properties of transition elements (d-block) and inner transition elements (f-block), including their electronic configuration, variable oxidation states, catalytic and magnetic properties, color, and the chemistry of compounds like K₂Cr₂O₇ and KMnO₄, as well as lanthanoid contraction.",
+    "formulas": [],
+    "derivations": [
+      "Explanation of variable oxidation states based on electronic configuration",
+      "Reasons for catalytic properties of transition metals",
+      "Explanation of color and magnetic properties (qualitative)"
+    ]
+  },
+  "cc": {
+    "title": "Coordination Compounds",
+    "summary": "This chapter introduces a special class of compounds involving metal ions bonded to ligands. It covers definitions, IUPAC nomenclature, various types of isomerism (structural and stereoisomerism), and elementary ideas of bonding theories like Valence Bond Theory and Crystal Field Theory.",
+    "formulas": [],
+    "derivations": [
+      "Werner's theory postulates",
+      "Explanation of bonding in coordination compounds using Valence Bond Theory (VBT) and Crystal Field Theory (CFT) (qualitative aspects of hybridization, geometry, and magnetic properties)"
+    ]
+  },
+  "hh": {
+    "title": "Haloalkanes and Haloarenes",
+    "summary": "This chapter, the first in organic chemistry, focuses on hydrocarbons where hydrogen atoms are replaced by halogens. It covers their classification, nomenclature, nature of the C-X bond, preparation methods, physical properties, and key chemical reactions, including SN1 and SN2 mechanisms and elimination reactions.",
+    "formulas": [],
+    "derivations": [
+      "Mechanism of SN1 reaction (carbocation formation, stereochemistry)",
+      "Mechanism of SN2 reaction (concerted mechanism, inversion of configuration)",
+      "Mechanism of E1 and E2 reactions (qualitative)"
+    ]
+  },
+  "ape": {
+    "title": "Alcohols, Phenols, and Ethers",
+    "summary": "This chapter covers compounds with hydroxyl (-OH) and ether (-O-) functional groups. It includes their classification, nomenclature, preparation methods (e.g., from alkenes, carbonyl compounds, Williamson synthesis), physical properties, and a range of chemical reactions, such as acidity, oxidation, and electrophilic substitution in phenols.",
+    "formulas": [],
+    "derivations": [
+      "Explanation of the acidic nature of alcohols and phenols (resonance stabilization for phenols)",
+      "Mechanisms for key reactions like dehydration of alcohols or Williamson synthesis (qualitative understanding)."
+    ]
+  },
+  "akc": {
+    "title": "Aldehydes, Ketones, and Carboxylic Acids",
+    "summary": "This chapter focuses on compounds containing the carbonyl (>C=O) and carboxyl (-COOH) groups. It covers their nomenclature, the nature and reactivity of the carbonyl group, diverse preparation methods, physical properties, and characteristic reactions including nucleophilic addition (e.g., Aldol, Cannizzaro) and reactions related to the acidic nature of carboxylic acids.",
+    "formulas": [],
+    "derivations": [
+      "Explanation of nucleophilic addition reactions to carbonyl compounds",
+      "Mechanisms of Aldol condensation and Cannizzaro reaction (qualitative)",
+      "Factors affecting the acidic strength of carboxylic acids (inductive effect, resonance)."
     ]
   }
 }

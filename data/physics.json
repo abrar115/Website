@@ -7,16 +7,177 @@
       "Electric Field (E) due to a point charge: E = (1 / 4πε₀) × (q / r²)",
       "Force on a charge in an electric field: F = qE",
       "Electric Dipole Moment: p = q × 2a",
-      "Torque on a dipole in an electric field: τ = p × E",
+      "Torque on a dipole in an electric field: τ = p × E (or τ = pE sinθ)",
       "Electric Field due to an infinite plane sheet: E = σ / (2ε₀)",
-      "Gauss's Law: ∮E · dA = Qₑₙₛ / ε₀"
+      "Electric Field due to a uniformly charged infinite line: E = λ / (2πε₀r)",
+      "Gauss's Law: ∮E · dA = Q_enclosed / ε₀"
     ],
     "derivations": [
       "Electric field due to a point charge (from Coulomb's Law)",
       "Electric field due to an electric dipole (axial and equatorial positions)",
       "Torque on an electric dipole in a uniform electric field",
       "Electric field due to an infinite line of charge (using Gauss's Law)",
-      "Electric field due to a uniformly charged spherical shell (inside and outside)"
+      "Electric field due to a uniformly charged spherical shell (inside and outside using Gauss's Law)"
+    ]
+  },
+  "Electrostatic-Potential": {
+    "title": "Electrostatic Potential and Capacitance",
+    "summary": "This chapter builds on the concept of electric fields by introducing electric potential, potential energy, and equipotential surfaces. It then moves to capacitors, their capacitance, combinations, and the energy stored in them. The behavior of dielectrics in electric fields is also discussed.",
+    "formulas": [
+      "Electric Potential (V) due to a point charge: V = (1 / 4πε₀) × (q / r)",
+      "Electric Potential Difference: ΔV = W / q₀",
+      "Electric Potential Energy (U) of a system of two charges: U = (1 / 4πε₀) × (q₁q₂ / r)",
+      "Potential Energy of an electric dipole in an electric field: U = -p · E = -pE cosθ",
+      "Capacitance (C): C = Q / V",
+      "Capacitance of a parallel plate capacitor: C = ε₀A / d",
+      "Capacitance with dielectric: C = K C₀",
+      "Capacitors in Series: 1/C_eq = 1/C₁ + 1/C₂ + ...",
+      "Capacitors in Parallel: C_eq = C₁ + C₂ + ...",
+      "Energy stored in a capacitor: U = ½CV² = ½Q²/C = ½QV",
+      "Energy density of electric field: u = ½ε₀E²"
+    ],
+    "derivations": [
+      "Electric potential due to a point charge",
+      "Electric potential due to an electric dipole",
+      "Potential energy of a system of charges",
+      "Capacitance of a parallel plate capacitor (with and without dielectric)",
+      "Equivalent capacitance for series and parallel combinations",
+      "Energy stored in a capacitor"
+    ]
+  },
+  "Current-Electricity": {
+    "title": "Current Electricity",
+    "summary": "This chapter deals with electric current, Ohm's law, resistance, and the factors affecting it. It covers series and parallel combinations of resistors, Kirchhoff's laws for complex circuits, and the Wheatstone bridge. Concepts like internal resistance of a cell, electromotive force (emf), and power dissipation are also explained.",
+    "formulas": [
+      "Electric Current (I): I = Q / t (or I = n e A v_d)",
+      "Ohm's Law: V = IR",
+      "Resistance (R): R = ρ(L/A)",
+      "Resistors in Series: R_eq = R₁ + R₂ + ...",
+      "Resistors in Parallel: 1/R_eq = 1/R₁ + 1/R₂ + ...",
+      "Power (P): P = VI = I²R = V²/R",
+      "Internal Resistance of a cell: V = E - Ir",
+      "Kirchhoff's Junction Rule (Current Law): ΣI = 0 (at a junction)",
+      "Kirchhoff's Loop Rule (Voltage Law): ΣΔV = 0 (around a closed loop)",
+      "Wheatstone Bridge balance condition: P/Q = R/S",
+      "Meter Bridge formula: R/S = l₁ / (100 - l₁)"
+    ],
+    "derivations": [
+      "Drift velocity and its relation with current",
+      "Ohm's law (microscopic form and macroscopic form)",
+      "Equivalent resistance for series and parallel combinations",
+      "Kirchhoff's laws (conceptual applications)",
+      "Wheatstone bridge balance condition"
+    ]
+  },
+  "Moving-Charges-Magnetism": {
+    "title": "Moving Charges and Magnetism",
+    "summary": "This chapter introduces the magnetic effects of electric current. It covers the Biot-Savart Law and Ampere's Circuital Law for calculating magnetic fields due to various current configurations. The force on moving charges and current-carrying conductors in magnetic fields, torque on a current loop, and working of moving coil galvanometer are also explained.",
+    "formulas": [
+      "Lorentz Force: F = q(E + v × B)",
+      "Force on a moving charge in a magnetic field: F = q(v × B) = qvB sinθ",
+      "Force on a current-carrying conductor: F = I(L × B) = BIL sinθ",
+      "Magnetic Field (B) due to a straight current-carrying conductor (Ampere's Law): B = μ₀I / (2πr)",
+      "Magnetic Field at the center of a circular loop: B = μ₀I / (2R)",
+      "Magnetic Field on the axis of a circular loop: B = (μ₀IR² / 2(R² + x²)^(3/2))",
+      "Magnetic Field inside a long solenoid: B = μ₀nI",
+      "Torque on a current loop in a uniform magnetic field: τ = M × B = NIAB sinθ",
+      "Magnetic Dipole Moment of a current loop: M = IA",
+      "Force between two parallel current-carrying conductors: F/L = μ₀I₁I₂ / (2πd)"
+    ],
+    "derivations": [
+      "Biot-Savart Law (conceptual understanding and applications)",
+      "Ampere's Circuital Law (conceptual understanding and applications)",
+      "Magnetic field due to a straight current-carrying wire (using Ampere's Law)",
+      "Magnetic field inside a solenoid (using Ampere's Law)",
+      "Force between two parallel current-carrying conductors",
+      "Torque on a current loop in a uniform magnetic field"
+    ]
+  },
+  "Magnetism-Matter": {
+    "title": "Magnetism and Matter",
+    "summary": "This chapter explores the fundamental properties of magnets and magnetic materials. It discusses the Earth's magnetism, magnetic field lines, and the behavior of various magnetic materials (diamagnetic, paramagnetic, and ferromagnetic) in external magnetic fields. Concepts like magnetic dipole moment, magnetic intensity, and magnetic susceptibility are introduced.",
+    "formulas": [
+      "Magnetic field due to a magnetic dipole (Bar Magnet) on axial line: B = (μ₀ / 4π) × (2M / r³)",
+      "Magnetic field due to a magnetic dipole (Bar Magnet) on equatorial line: B = (μ₀ / 4π) × (M / r³)",
+      "Torque on a magnetic dipole in a magnetic field: τ = M × B = MB sinθ",
+      "Potential Energy of a magnetic dipole in a magnetic field: U = -M · B = -MB cosθ",
+      "Relation between B, H, and M: B = μ₀(H + M)",
+      "Magnetic Susceptibility: χ_m = M / H",
+      "Relative Permeability: μ_r = 1 + χ_m"
+    ],
+    "derivations": [
+      "Magnetic field due to a bar magnet (as an equivalent solenoid)",
+      "Torque and potential energy of a magnetic dipole in a magnetic field",
+      "Relationship between B, H, and M (conceptual)"
+    ]
+  },
+  "Electromagnetic-Induction": {
+    "title": "Electromagnetic Induction",
+    "summary": "This chapter deals with the phenomenon of electromagnetic induction, where a changing magnetic flux induces an electromotive force (emf) and current. It covers Faraday's laws of induction, Lenz's law, motional emf, eddy currents, and self-induction and mutual induction. The concept of AC generator is also introduced.",
+    "formulas": [
+      "Magnetic Flux (Φ_B): Φ_B = B · A = BA cosθ",
+      "Faraday's Law of Electromagnetic Induction: ε = -N (dΦ_B / dt)",
+      "Motional EMF: ε = Blv sinθ (for a conductor moving in a uniform field)",
+      "Self-Inductance (L): L = Φ_B / I",
+      "EMF induced in an inductor: ε = -L (dI / dt)",
+      "Energy stored in an inductor: U = ½LI²",
+      "Mutual Inductance (M): M = Φ_B₂ / I₁",
+      "EMF induced due to mutual induction: ε₂ = -M (dI₁ / dt)"
+    ],
+    "derivations": [
+      "Faraday's laws of electromagnetic induction",
+      "Lenz's law (conceptual, conservation of energy)",
+      "Motional EMF (from Lorentz force and from change in flux)",
+      "Energy stored in an inductor",
+      "Self-inductance and mutual inductance"
+    ]
+  },
+  "Alternating-Current": {
+    "title": "Alternating Current",
+    "summary": "This chapter explores the characteristics and behavior of alternating current (AC). It covers AC voltage and current, phase difference, reactance (inductive and capacitive), impedance, and series LCR circuits. Concepts like resonance, quality factor, AC generator, and transformer are also discussed.",
+    "formulas": [
+      "Instantaneous AC voltage: V = V₀ sin(ωt)",
+      "Instantaneous AC current: I = I₀ sin(ωt + φ)",
+      "RMS values: V_rms = V₀ / √2, I_rms = I₀ / √2",
+      "Inductive Reactance (X_L): X_L = ωL = 2πfL",
+      "Capacitive Reactance (X_C): X_C = 1 / (ωC) = 1 / (2πfC)",
+      "Impedance (Z) for LCR series circuit: Z = √(R² + (X_L - X_C)²)",
+      "Phase angle (φ): tanφ = (X_L - X_C) / R",
+      "Resonant Frequency (f_r or ω_r): f_r = 1 / (2π√(LC)) or ω_r = 1 / √(LC)",
+      "Average Power in AC circuit: P_avg = V_rms I_rms cosφ (where cosφ is power factor)",
+      "Transformer relation: V_s / V_p = N_s / N_p = I_p / I_s",
+      "Quality factor (Q): Q = ω_rL / R = 1 / (ω_rCR)"
+    ],
+    "derivations": [
+      "RMS values of AC voltage and current",
+      "Inductive and capacitive reactance",
+      "Impedance of an LCR series circuit (phasor diagram method)",
+      "Resonant frequency for an LCR series circuit",
+      "Average power in an AC circuit (power factor)",
+      "Transformer equations"
+    ]
+  },
+  "Electromagnetic-Waves": {
+    "title": "Electromagnetic Waves",
+    "summary": "This chapter introduces the concept of electromagnetic waves, their properties, and the electromagnetic spectrum. It discusses the displacement current introduced by Maxwell and the four Maxwell's equations. The transverse nature of EM waves, their speed in vacuum and media, and their energy and momentum are also covered.",
+    "formulas": [
+      "Speed of EM waves in vacuum: c = 1 / √(μ₀ε₀)",
+      "Speed of EM waves in medium: v = 1 / √(με)",
+      "Relation between E and B field amplitudes: c = E₀ / B₀",
+      "Energy density of electric field: u_E = ½ε₀E²",
+      "Energy density of magnetic field: u_B = ½B² / μ₀",
+      "Poynting Vector (S): S = (1/μ₀)(E × B)",
+      "Displacement Current (I_d): I_d = ε₀ (dΦ_E / dt)",
+      "Maxwell's Equations (conceptual understanding):",
+      "  1. Gauss's Law for Electrostatics: ∮E · dA = Q_enclosed / ε₀",
+      "  2. Gauss's Law for Magnetism: ∮B · dA = 0",
+      "  3. Faraday's Law: ∮E · dl = -dΦ_B / dt",
+      "  4. Ampere-Maxwell Law: ∮B · dl = μ₀(I_c + I_d) = μ₀(I_c + ε₀ dΦ_E / dt)"
+    ],
+    "derivations": [
+      "Maxwell's modification of Ampere's Circuital Law (displacement current)",
+      "Derivation of the speed of electromagnetic waves from Maxwell's equations (conceptual)",
+      "Transverse nature of EM waves (qualitative)"
     ]
   }
 }

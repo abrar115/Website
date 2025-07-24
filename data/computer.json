@@ -1,24 +1,133 @@
 {
-  "python": {
+  "Python-Revision-Tour": {
     "title": "Python Revision Tour",
-    "summary": "This chapter revisits fundamental Python concepts including data types, operators, control structures, functions, strings, lists, dictionaries, and file handling. It serves as a refresher for core Python syntax and programming constructs before advancing to higher-level topics.",
+    "summary": "This chapter revisits fundamental Python concepts including data types, operators, control structures (if-else, loops), functions, strings, lists, tuples, dictionaries, and basic file handling. It serves as a comprehensive refresher for core Python syntax and programming constructs from Class 11.",
     "formulas": [
       "List slicing: list[start:stop:step]",
-      "String formatting: f'Text {variable}' or .format()",
-      "Dictionary operations: dict.keys(), dict.values(), dict.items()",
-      "File modes: 'r' (read), 'w' (write), 'a' (append)",
-      "Lambda function: lambda x: x * 2"
+      "String formatting: f'Text {variable}' or 'Text {}'.format(variable)",
+      "Dictionary operations: dict.keys(), dict.values(), dict.items(), dict.get()",
+      "File modes: 'r' (read), 'w' (write), 'a' (append), 'rb' (read binary), 'wb' (write binary)",
+      "Lambda function syntax: lambda arguments: expression"
     ],
     "derivations": [
-      "Execution flow of loops (for/while) with break/continue",
-      "Scope resolution in nested functions (local vs. global)",
-      "Memory allocation for mutable (lists) vs. immutable (tuples) objects",
-      "File read/write operations (with open() as file)",
-      "Dynamic typing in Python",
-      "Mutable vs. Immutable objects",
-      "Iterables vs. Iterators",
-      "Exception handling (try-except-else-finally)"
+      "Execution flow of loops (for/while) with break/continue/pass statements",
+      "Scope resolution in nested functions (LEGB rule: Local, Enclosing function locals, Global, Built-in)",
+      "Differences between mutable (lists, dictionaries, sets) and immutable (strings, tuples, numbers) objects in memory",
+      "Basic file read/write operations using `with open() as file:` for automatic resource management",
+      "Understanding Python's dynamic typing and strong typing",
+      "Concept of iterables and iterators",
+      "Mechanism of exception handling using `try-except-else-finally` blocks"
     ]
-    
+  },
+  "Functions-File-Handling": {
+    "title": "Functions & File Handling",
+    "summary": "This chapter deepens the understanding of functions, covering user-defined functions, arguments (positional, keyword, default, variable-length), return values, and function scope. It also extensively covers file handling operations, including reading and writing text files, and working with binary files (using pickle module) for object serialization.",
+    "formulas": [
+      "Function definition: def function_name(parameters):",
+      "Function call: function_name(arguments)",
+      "Packing/Unpacking arguments: *args, **kwargs",
+      "Writing to text file: file_object.write('string')",
+      "Reading from text file: file_object.read(), .readline(), .readlines()",
+      "Pickle dump: pickle.dump(object, file_object)",
+      "Pickle load: object = pickle.load(file_object)"
+    ],
+    "derivations": [
+      "Flow of execution in function calls, including parameter passing mechanisms",
+      "Understanding different types of function arguments and their use cases",
+      "Error handling in file operations (File Not Found, Permission errors)",
+      "Working mechanism of `pickle` module for serialization/deserialization",
+      "Difference between `read()`, `readline()`, and `readlines()` for text files"
+    ]
+  },
+  "Data-Structures-Stack": {
+    "title": "Data Structures: Stack",
+    "summary": "This chapter introduces the Stack as a Last-In, First-Out (LIFO) linear data structure. It covers its basic operations: push (adding an element), pop (removing the top element), peek (viewing the top element), and checking if the stack is empty or full. Implementation using Python lists and functions is emphasized.",
+    "formulas": [
+      "Stack size: len(stack_list)",
+      "Push operation (conceptual): stack_list.append(item)",
+      "Pop operation (conceptual): stack_list.pop()",
+      "Peek operation (conceptual): stack_list[-1]"
+    ],
+    "derivations": [
+      "Step-by-step trace of push and pop operations on a stack",
+      "Conceptual implementation of `isEmpty()`, `isFull()`, `push()`, `pop()`, `peek()` functions using lists",
+      "Applications of stacks (e.g., function call stack, expression evaluation, undo/redo mechanism)"
+    ]
+  },
+  "Data-Structures-Queue": {
+    "title": "Data Structures: Queue",
+    "summary": "This chapter introduces the Queue as a First-In, First-Out (FIFO) linear data structure. It covers its fundamental operations: enqueue (adding an element to the rear), dequeue (removing an element from the front), and checking for empty or full states. Implementation using Python lists and functions is detailed.",
+    "formulas": [
+      "Queue size: len(queue_list)",
+      "Enqueue operation (conceptual): queue_list.append(item)",
+      "Dequeue operation (conceptual): queue_list.pop(0) (for simple list implementation)",
+      "Front element (conceptual): queue_list[0]"
+    ],
+    "derivations": [
+      "Step-by-step trace of enqueue and dequeue operations on a queue",
+      "Conceptual implementation of `isEmpty()`, `isFull()`, `enqueue()`, `dequeue()`, `front()` functions using lists",
+      "Limitations of simple list-based queue implementation (inefficiency of `pop(0)`)",
+      "Applications of queues (e.g., CPU scheduling, print spooling, breadth-first search)"
+    ]
+  },
+  "Searching-Algorithms": {
+    "title": "Searching Algorithms",
+    "summary": "This chapter focuses on fundamental algorithms for finding a specific element within a data collection. It covers Linear Search (sequential search) and Binary Search (for sorted data), detailing their logic, step-by-step execution with examples, and analyzing their time complexities (best, worst, and average cases).",
+    "formulas": [
+      "Linear Search Time Complexity: O(n) (worst/average case), O(1) (best case)",
+      "Binary Search Time Complexity: O(log n) (worst/average case), O(1) (best case)"
+    ],
+    "derivations": [
+      "Algorithm for Linear Search (iterative/recursive)",
+      "Algorithm for Binary Search (iterative/recursive), emphasizing the requirement for sorted data and halving search space",
+      "Comparison of efficiency and practical applications of Linear vs. Binary search"
+    ]
+  },
+  "Sorting-Algorithms": {
+    "title": "Sorting Algorithms",
+    "summary": "This chapter introduces algorithms used to arrange elements in a list in a specific order (ascending/descending). It covers three common sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort, explaining their logic, step-by-step processes with examples, and basic analysis of their time complexities.",
+    "formulas": [
+      "Bubble Sort Time Complexity: O(n²) (worst/average case), O(n) (best case for nearly sorted)",
+      "Selection Sort Time Complexity: O(n²) (all cases)",
+      "Insertion Sort Time Complexity: O(n²) (worst/average case), O(n) (best case for nearly sorted)"
+    ],
+    "derivations": [
+      "Algorithm for Bubble Sort (comparison and swapping of adjacent elements)",
+      "Algorithm for Selection Sort (finding minimum/maximum and placing at correct position)",
+      "Algorithm for Insertion Sort (inserting an element into its correct position in a sorted sublist)",
+      "Visual trace of each sorting algorithm on a small dataset"
+    ]
+  },
+  "Database-Concepts": {
+    "title": "Database Concepts",
+    "summary": "This chapter introduces the fundamental concepts of databases, focusing on Relational Database Management Systems (RDBMS). Key topics include data, information, database advantages, schema, instances, data types, primary keys, foreign keys, candidate keys, composite keys, and an elementary understanding of normalization (1NF, 2NF, 3NF).",
+    "formulas": [
+      "Cardinality: Number of rows (tuples) in a table",
+      "Degree: Number of columns (attributes) in a table"
+    ],
+    "derivations": [
+      "Comparison of traditional file systems vs. DBMS",
+      "Conceptual model of a relational database (tables, rows, columns)",
+      "Purpose and properties of primary key, foreign key, and other types of keys",
+      "Basic understanding of normalization rules (to reduce data redundancy and improve data integrity)"
+    ]
+  },
+  "SQL-Python-Connectivity": {
+    "title": "SQL & Python Connectivity",
+    "summary": "This chapter focuses on Structured Query Language (SQL) for managing and querying relational databases, including various DDL, DML, and DCL commands. It also covers connecting Python programs to a MySQL database, executing SQL queries from Python, and fetching results. Essential SQL functions (aggregate, string, numeric, date) and JOIN operations are discussed.",
+    "formulas": [
+      "SQL SELECT syntax: SELECT columns FROM table WHERE condition;",
+      "SQL JOIN types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN (conceptual)",
+      "Aggregate functions: COUNT(), SUM(), AVG(), MIN(), MAX()",
+      "Python MySQL connection: mysql.connector.connect()",
+      "Executing query: cursor.execute('SQL QUERY')",
+      "Fetching results: cursor.fetchone(), cursor.fetchall()"
+    ],
+    "derivations": [
+      "Conceptual understanding of DDL (CREATE, ALTER, DROP), DML (INSERT, UPDATE, DELETE, SELECT), and DCL (GRANT, REVOKE) commands",
+      "Detailed explanation of different clauses in SELECT statement (WHERE, GROUP BY, HAVING, ORDER BY)",
+      "Working mechanism of connecting Python with MySQL using `mysql.connector` library",
+      "Error handling in database operations from Python (e.g., connection errors, query errors)"
+    ]
   }
 }

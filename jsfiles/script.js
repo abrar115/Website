@@ -18,7 +18,12 @@ if (!subject || !chapter) {
 
       document.getElementById("chapter-title").textContent = chapterData.title;
       document.getElementById("chapter-summary").textContent = chapterData.summary;
-
+if (chapterData.formulas.length == 0){
+  const formulaList = document.getElementById("chapter-formulas");
+  formulaList.remove()
+  const formulaListH3 = document.getElementById("chapter-formulas-h3");
+  formulaListH3.remove()
+}
       const formulaList = document.getElementById("chapter-formulas");
       chapterData.formulas.forEach(f => {
         const li = document.createElement("li");
