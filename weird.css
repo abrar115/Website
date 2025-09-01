@@ -160,3 +160,9 @@ background: #184e77;
   background-color: #e0ffe0;
   font-weight: bold;
 }
+
+#timesheetTable td[contenteditable="true"] {
+  background: inherit;   /* keep same background as table */
+  outline: none;         /* remove default focus outline */
+  color: inherit;        /* keep same text color */
+}

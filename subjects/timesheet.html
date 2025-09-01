@@ -32,7 +32,11 @@
 
     <div class="timesheet__main">
       <div class="timesheet__containers">
-        
+          <div style="text-align:center; margin-bottom:15px;">
+    <input type="password" id="authPassword" placeholder="Enter password">
+    <button id="unlockBtn">Unlock</button>
+    <span id="authMsg" style="color:red; font-size:0.9em;"></span>
+  </div>
         <table class="timesheet__table" id="timesheetTable">
           <thead>
             <tr>
@@ -44,56 +48,56 @@
               <th>Research</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Sunday</td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-            </tr>
-            <tr>
-              <td>Monday</td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-              <td contenteditable="true"></td>
-            </tr>
-            <tr class="totals-row">
-              <td><strong>Total</strong></td>
-              <td id="total-physics">0</td>
-              <td id="total-chemistry">0</td>
-              <td id="total-math">0</td>
-              <td id="total-cs">0</td>
-              <td id="total-research">0</td>
-            </tr>
-          </tbody>
+   <tbody>
+  <tr>
+    <td>Sunday</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="totals-row">
+    <td><strong>Total</strong></td>
+    <td id="total-physics">0</td>
+    <td id="total-chemistry">0</td>
+    <td id="total-math">0</td>
+    <td id="total-cs">0</td>
+    <td id="total-research">0</td>
+  </tr>
+</tbody>
         </table>
       </div>
     </div>
@@ -119,7 +123,27 @@
 
     localStorage.setItem("timesheetData", JSON.stringify(data));
   }
+const PASSWORD = "study123";
 
+document.querySelectorAll("#timesheetTable td:not(:first-child)").forEach(cell => {
+  cell.setAttribute("contenteditable", "false");
+});
+
+document.getElementById("unlockBtn").addEventListener("click", () => {
+  const entered = document.getElementById("authPassword").value;
+  const msg = document.getElementById("authMsg");
+
+  if (entered === PASSWORD) {
+    document.querySelectorAll("#timesheetTable td:not(:first-child)").forEach(cell => {
+      cell.setAttribute("contenteditable", "true");
+    });
+    msg.style.color = "green";
+    msg.textContent = "Unlocked!";
+  } else {
+    msg.style.color = "red";
+    msg.textContent = "Wrong password!";
+  }
+});
 
   function loadData() {
     let saved = localStorage.getItem("timesheetData");
