@@ -48,56 +48,56 @@
               <th>Research</th>
             </tr>
           </thead>
-   <tbody>
-  <tr>
-    <td>Sunday</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Monday</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr class="totals-row">
-    <td><strong>Total</strong></td>
-    <td id="total-physics">0</td>
-    <td id="total-chemistry">0</td>
-    <td id="total-math">0</td>
-    <td id="total-cs">0</td>
-    <td id="total-research">0</td>
-  </tr>
-</tbody>
+          <tbody>
+            <tr>
+              <td>Sunday</td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr class="totals-row">
+              <td><strong>Total</strong></td>
+              <td id="total-physics">0</td>
+              <td id="total-chemistry">0</td>
+              <td id="total-math">0</td>
+              <td id="total-cs">0</td>
+              <td id="total-research">0</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -125,6 +125,7 @@
   }
 const PASSWORD = "study123";
 
+// Disable editing by default
 document.querySelectorAll("#timesheetTable td:not(:first-child)").forEach(cell => {
   cell.setAttribute("contenteditable", "false");
 });
@@ -134,9 +135,17 @@ document.getElementById("unlockBtn").addEventListener("click", () => {
   const msg = document.getElementById("authMsg");
 
   if (entered === PASSWORD) {
-    document.querySelectorAll("#timesheetTable td:not(:first-child)").forEach(cell => {
+    const cells = document.querySelectorAll("#timesheetTable td:not(:first-child)");
+    cells.forEach(cell => {
       cell.setAttribute("contenteditable", "true");
+
+      // Add the input listener now
+      cell.addEventListener("input", () => {
+        saveData();
+        calculateTotals();
+      });
     });
+
     msg.style.color = "green";
     msg.textContent = "Unlocked!";
   } else {
