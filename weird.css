@@ -109,6 +109,7 @@ background: #184e77;
 
 /* Options - sidebar details */
 
+
 .sidenav__details__options{
   background: #fcabfc;
   border-right:2px solid black
@@ -123,3 +124,39 @@ background: #184e77;
 }
 
 /* Timesheet details */
+
+.timesheet__table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lexend', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.timesheet__table th,
+.timesheet__table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.timesheet__table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.timesheet__table td[contenteditable="true"] {
+  background-color: #fafafa;
+  cursor: text;
+}
+
+.timesheet__table td:focus {
+  outline: 2px solid #4CAF50;
+  background-color: #fff;
+}
+
+.totals-row {
+  background-color: #e0ffe0;
+  font-weight: bold;
+}

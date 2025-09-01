@@ -1799,7 +1799,8 @@ color:#219ebc
   animation-iteration-count: infinite;
   animation-direction:alternate-reverse;
   animation-timing-function: linear; 
-  margin: 2%
+  margin: 2%;
+  padding: 5%
 }
 .timesheet__desc{
   margin-bottom: 2%;
