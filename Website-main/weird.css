@@ -1,0 +1,168 @@
+/* Structure CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lexar", sans-serif;
+}
+.study__body {
+  position: relative;
+}
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  transition: 0.3s linear;
+}
+.sidenav h2 {
+  font-size: 36px;
+}
+.sidenav .gap {
+  width: 100%;
+}
+.sidenav ul {
+  width: 100%;
+  list-style: none;
+}
+.sidenav ul li {
+  margin: 15px;
+}
+.sidenav ul li a {
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 0.3s ease color;
+}
+
+main {
+  margin-left: 250px;
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+  background: #184e77;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  margin: 20px;
+  display: none;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+.menu:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .sidenav {
+    left: -100%;
+    z-index: 50;
+  }
+  .sidenav.active {
+    left: 0;
+  }
+  main {
+    margin-left: 0;
+  }
+  .menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidenav {
+    width: 100%;
+    justify-content: left;
+    align-items: left;
+  }
+  .sidenav ul li {
+    text-align: left;
+  }
+  
+}
+
+
+ /* Details CSS */
+.study__body{
+background: #184e77;
+}
+
+.sidenav__details{
+  color:#52b69a;
+  background: black;
+}
+.sidenav__details li a:hover {
+  color:#99d98c;
+}
+.sidenav__details li a{
+  color:#52b69a
+}
+
+/* Options - sidebar details */
+
+
+.sidenav__details__options{
+  background: #fcabfc;
+  border-right:2px solid black
+}
+
+.sidenav__details__options li a:hover{
+  color: #dd0a0a;
+
+}
+.sidenav__details__options h2{
+  color:rgb(255, 0, 221)
+}
+
+/* Timesheet details */
+
+.timesheet__table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lexend', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.timesheet__table th,
+.timesheet__table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.timesheet__table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.timesheet__table td[contenteditable="true"] {
+  background-color: #fafafa;
+  cursor: text;
+}
+
+.timesheet__table td:focus {
+  outline: 2px solid #4CAF50;
+  background-color: #fff;
+}
+
+.totals-row {
+  background-color: #e0ffe0;
+  font-weight: bold;
+}
+
+#timesheetTable td[contenteditable="true"] {
+  background: inherit;   /* keep same background as table */
+  outline: none;         /* remove default focus outline */
+  color: inherit;        /* keep same text color */
+}
